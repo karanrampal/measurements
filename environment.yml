@@ -1,0 +1,32 @@
+name: mp-env
+channels:
+  - conda-forge
+dependencies:
+  # System related
+  - python=3.8
+  - pip
+  - build
+  - ipykernel
+  - gcsfs
+  - pyyaml
+  - types-pyyaml
+  # Scipy stack
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - pandas
+  # Others
+  - tqdm
+  # Testing
+  - pytest
+  - pytest-cov
+  - pytest-mock
+  # Formating, linting
+  - mypy
+  - pylint
+  - black
+  - isort
+  - pip:
+    - fastapi
+    - uvicorn[standard]
+    - mediapipe

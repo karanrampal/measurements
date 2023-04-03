@@ -1,0 +1,38 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+MANIFEST
+
+# Unit test / coverage reports
+.tox/
+.coverage
+coverage.xml
+.pytest_cache/
+
+# Sphinx documentation
+docs/_build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
+__pypackages__/
+
+# Environments
+.venv
+
+# mypy
+.mypy_cache/
+
+# VScode
+.vscode/
+
+# Project specific
+data/
+output/
+notebooks/

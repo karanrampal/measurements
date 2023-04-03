@@ -1,0 +1,43 @@
+[project]
+name = "Measurements"
+version = "0.0.1"
+authors = [
+  { name="Karan Rampal", email="karan.rampal@hm.com" },
+]
+description = "A project for body measurement predictions from RGB images"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hm-group/measurements"
+"Bug Tracker" = "https://github.com/hm-group/measurements/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[tool.mypy]
+show_error_codes = true
+ignore_missing_imports = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+
+[tool.pylint."MASTER"]
+ignore = [".ipynb_checkpoints"]
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+line-length = 100
