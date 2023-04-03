@@ -15,6 +15,8 @@ dependencies:
   - matplotlib
   - scikit-learn
   - pandas
+  # CV
+  - opencv
   # Others
   - tqdm
   # Testing

@@ -13,6 +13,8 @@ mediapipe
 # API
 fastapi
 uvicorn[standard]
+# CV
+opencv-python
 # Others
 tqdm
 # Testing
