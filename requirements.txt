@@ -1,8 +1,10 @@
 # System related
 build
 gcsfs
+ipykernel
 pyyaml
 types-pyyaml
+python-multipart
 # Scipy stack
 numpy
 matplotlib
