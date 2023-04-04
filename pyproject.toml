@@ -12,6 +12,10 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dependencies = [
+    "mediapipe",
+    "fastapi",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/hm-group/measurements"
@@ -35,6 +39,9 @@ disallow_incomplete_defs = true
 
 [tool.pylint."MASTER"]
 ignore = [".ipynb_checkpoints"]
+
+[tool.pylint."TYPECHECK"]
+ignored-modules = ["mediapipe"]
 
 [tool.isort]
 profile = "black"
