@@ -10,6 +10,9 @@ dependencies:
   - gcsfs
   - pyyaml
   - types-pyyaml
+  # API
+  - fastapi
+  - uvicorn
   - python-multipart
   # Scipy stack
   - numpy
@@ -30,6 +33,4 @@ dependencies:
   - black
   - isort
   - pip:
-    - fastapi
-    - uvicorn[standard]
     - mediapipe
