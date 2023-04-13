@@ -15,7 +15,8 @@ classifiers = [
 dependencies = [
     "mediapipe",
     "fastapi",
-    "uvicorn"
+    "uvicorn",
+    "opencv-python"
 ]
 
 [project.urls]
@@ -31,6 +32,9 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
+
+[tool.coverage.run]
+disable_warnings = ["couldnt-parse"]
 
 [tool.mypy]
 show_error_codes = true
