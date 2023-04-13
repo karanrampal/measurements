@@ -1,0 +1,23 @@
+-r requirements.txt
+# System related
+build
+gcsfs
+ipykernel
+ipywidgets
+pyyaml
+types-pyyaml
+# Scipy stack
+scikit-learn
+pandas
+# Others
+tqdm
+# Testing
+pytest
+pytest-cov
+pytest-mock
+httpx
+# Formatiing, linting
+mypy
+pylint
+black
+isort

@@ -7,14 +7,22 @@ dependencies:
   - pip
   - build
   - ipykernel
+  - ipywidget
   - gcsfs
   - pyyaml
   - types-pyyaml
+  # API
+  - fastapi
+  - uvicorn
+  - python-multipart
+  - httpx
   # Scipy stack
   - numpy
   - matplotlib
   - scikit-learn
   - pandas
+  # CV
+  - opencv
   # Others
   - tqdm
   # Testing
@@ -27,6 +35,4 @@ dependencies:
   - black
   - isort
   - pip:
-    - fastapi
-    - uvicorn[standard]
     - mediapipe

@@ -1,26 +1,11 @@
-# System related
-build
-gcsfs
-pyyaml
-types-pyyaml
 # Scipy stack
 numpy
 matplotlib
-scikit-learn
-pandas
 # ML
 mediapipe
 # API
 fastapi
 uvicorn[standard]
-# Others
-tqdm
-# Testing
-pytest
-pytest-cov
-pytest-mock
-# Formatiing, linting
-mypy
-pylint
-black
-isort
+python-multipart
+# CV
+opencv-python
