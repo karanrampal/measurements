@@ -1,7 +1,9 @@
 ![Measurements](https://github.com/hm-group/measurements/actions/workflows/main.yml/badge.svg)
 
 # Measurements
-Body measurementsfrom RGB data
+Body measurements from RGB data.
+
+This project is fro creating an api using FastAPI to get body measurements such as height, chest, arm length, leg length etc. from an RGB image. One can query the endpoint at `/measurement/` by uploading an image and get the calculated measurements.
 
 ## Usage
 First clone the project as follows,
