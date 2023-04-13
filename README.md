@@ -1,4 +1,4 @@
-![Measurements](https://github.com/hm-group/measurements/actions/workflows/main.yml/badge.svg)
+![Measurements](https://github.com/karanrampal/measurements/actions/workflows/main.yml/badge.svg)
 
 # Measurements
 Body measurements from RGB data.
