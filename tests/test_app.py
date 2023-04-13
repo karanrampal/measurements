@@ -1,14 +1,14 @@
 """Unit tests for api"""
 
-from fastapi.testclient import TestClient
+import pytest
+from httpx import AsyncClient
 
 from main import app
 
-client = TestClient(app)
 
-
-def test_get_measurements() -> None:
+@pytest.mark.anyio
+async def test_get_measurements() -> None:
     """Test response code"""
-    response = client.post("/measurement/")
-    print(response.status_code)
+    async with AsyncClient(app=app, base_url="http://test") as asc:
+        response = await asc.post("/measurement/")
     assert response.status_code == 422

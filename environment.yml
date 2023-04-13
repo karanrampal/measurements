@@ -16,6 +16,7 @@ dependencies:
   - uvicorn
   - python-multipart
   - httpx
+  - trio
   # Scipy stack
   - numpy
   - matplotlib
