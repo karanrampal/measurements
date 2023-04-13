@@ -1,6 +1,6 @@
 SHELL := /bin/bash
 CONDAENV := environment.yml
-REQ := requirements.txt
+REQ := requirements_all.txt
 
 # Docker
 PROJECT := airesearch-1409
