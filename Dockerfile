@@ -8,4 +8,4 @@ RUN pip install -r requirements.txt
 
 COPY ./src .
 
-ENTRYPOINT ["./main.py"]
+CMD uvicorn --port $PORT --host 0.0.0.0 main:app
