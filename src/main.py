@@ -7,12 +7,31 @@ from typing import List
 import numpy as np
 import uvicorn
 from fastapi import FastAPI, HTTPException, UploadFile
+from fastapi.openapi.docs import get_swagger_ui_html
 from PIL import Image
+from starlette.responses import HTMLResponse
 
 from model.model import BodyMeasurement
 
 app = FastAPI()
 
+
+@app.get("/measurement/docs/", include_in_schema=False)
+async def custom_swagger_ui_html() -> HTMLResponse:
+    """Returns the API documentation.
+
+    Raises:
+        RuntimeError: If the API was not created with a specified openapi URL.
+
+    Returns:
+        HTMLResponse: The OpenAPI documentation.
+    """
+    if app.openapi_url is None:
+        raise RuntimeError("No openapi url specified.")
+    return get_swagger_ui_html(
+        openapi_url=app.openapi_url,
+        title="API",
+    )
 
 @app.post("/measurement/")
 async def get_measurements(data: UploadFile) -> List[float]:
